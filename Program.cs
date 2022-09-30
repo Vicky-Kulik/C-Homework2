@@ -14,3 +14,26 @@ void Holidays ()
 }
 
 Holidays ();
+
+//-----------------------------------------------------------
+
+// Напишите программу, которая выводит третью цифру заданного числа
+// или сообщает, что третьей цифры нет
+
+void ThirdNum ()
+{
+    Console.Write("Введите число: ") ;
+    string str = (Console.ReadLine ()) ;
+    
+    try 
+        {
+            Console.WriteLine(str[2]);
+        }
+    catch
+        {
+            Console.WriteLine($"Третьей цифры нет");
+        }
+    
+}
+
+ThirdNum ();
